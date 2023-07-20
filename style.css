@@ -125,7 +125,7 @@ table {
 
 body {
     background: #0e1014;
-    min-height: 981px;
+    min-height: 100vh;
 }
 
 .content-top {
@@ -139,6 +139,8 @@ body {
 }
 
 .header {
+    position: relative;
+    z-index: 10;
     height: 73px;
     padding-top: 14px;
     display: flex;
@@ -192,6 +194,8 @@ body {
 }
 
 .content {
+    position: relative;
+    z-index: 10;
     padding-top: 90px;
     padding-bottom: 69px;
 }
@@ -317,6 +321,8 @@ span {
 }
 
 .footer {
+    position: relative;
+    z-index: 10;
     height: 315px;
     padding-top: 55px;
     padding-bottom: 20px;
@@ -438,4 +444,16 @@ span {
     position: absolute;
     top: 0px;
     left: 868px;
+}
+
+.red-light {
+    position: absolute;
+    top: 251px;
+    left: -102px;
+}
+
+.purple-light {
+    position: absolute;
+    top: -154px;
+    left: 602px;
 }
