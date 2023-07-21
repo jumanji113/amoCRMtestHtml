@@ -178,10 +178,19 @@ body {
     font-weight: 500;
     line-height: normal;
     text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.header-nav_elem:hover {
+    color: #97989e;
 }
 
 .header-phone {
     text-align: right;
+}
+
+.header-phone:hover {
+    color: #97989e;
 }
 
 .header-contacs {
@@ -382,6 +391,12 @@ span {
     font-weight: 500;
     line-height: normal;
     text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.footer-content_number-a:hover {
+    color: #97989e;
 }
 
 .footer-content_contacts {
@@ -399,6 +414,10 @@ span {
     font-weight: 400;
     line-height: normal;
 }
+
+.footer-content_adress:hover {
+    color: #97989e;
+}
 .footer-content_lowtext {
     color: #e4e5ea;
     font-family: Inter;
@@ -406,6 +425,12 @@ span {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.footer-content_lowtext:hover {
+    color: #97989e;
 }
 
 .footer-down {
@@ -438,22 +463,331 @@ span {
     position: absolute;
     top: 83px;
     left: 519px;
+    width: 83px;
+    height: 83px;
 }
 
 .ball-three {
     position: absolute;
     top: 0px;
     left: 868px;
+    width: 60px;
+    height: 60px;
 }
 
 .red-light {
     position: absolute;
     top: 251px;
     left: -102px;
+    width: 311px;
+    height: 311px;
+    z-index: 1;
+    border-radius: 311px;
+    opacity: 0.5;
+    background: #961a1a;
+    filter: blur(196px);
 }
 
 .purple-light {
     position: absolute;
     top: -154px;
     left: 602px;
+    width: 259px;
+    height: 259px;
+    z-index: 1;
+    border-radius: 259px;
+    opacity: 0.5;
+    background: #833ab4;
+    filter: blur(196px);
+}
+
+.page-small {
+    display: none;
+}
+@media screen and (max-width: 320px) {
+    .page-main {
+        display: none;
+    }
+
+    .container-two {
+        position: relative;
+        overflow: hidden;
+        width: 320px;
+    }
+
+    .page-small {
+        display: block;
+    }
+
+    .header-two {
+        padding-left: 16px;
+        padding-right: 16px;
+        position: relative;
+        width: 100%;
+        height: 55px;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .header-two_a {
+        cursor: pointer;
+        color: #e4e5ea;
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: all 0.3s;
+    }
+
+    .header-two_a:hover {
+        color: #a6a7ad;
+    }
+
+    .content-mobile {
+        width: 100%;
+        height: 445px;
+        padding: 40px 34px 59px 14px;
+    }
+
+    .content-mobile_one,
+    .content-mobile_two {
+        color: #e4e5ea;
+        font-family: Inter;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .content-mobile_two {
+        font-weight: 900;
+        display: inline-block;
+        background-image: linear-gradient(to right, #fcb045, #ff3f78);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .content-mobile_three {
+        margin-top: 15px;
+        color: #e4e5ea;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .content-mobile-four {
+        margin-top: 45px;
+        color: #e4e5ea;
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    span {
+        background-image: linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.9px;
+        text-transform: uppercase;
+    }
+
+    .content-mobile-ul {
+        margin-top: 20px;
+        display: flex;
+        gap: 27px;
+        flex-wrap: wrap;
+        padding-left: 15px;
+    }
+
+    .content-mobile_li {
+        position: relative;
+        text-decoration: none;
+        color: #e4e5ea;
+        font-family: Montserrat;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.65px;
+        text-transform: uppercase;
+    }
+
+    .content-mobile_li::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: -10px;
+        transform: translate(-50%, -50%);
+        width: 10px;
+        height: 1px;
+        background: linear-gradient(to right, #fcb045 36.99%, #fd1d1d 100%);
+    }
+
+    .footer-mobile {
+        height: 618px;
+        padding: 45px 45px 55px 16px;
+        background-color: black;
+    }
+    .footer-mobile_header-one,
+    .footer-mobile_center-header {
+        color: #656566;
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.6px;
+        text-transform: uppercase;
+    }
+    .footer-mobile_header-two {
+        margin-top: 20px;
+        color: #e4e5ea;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .footer-mobile_header-three {
+        margin-top: 10px;
+        color: #e4e5ea;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .footer-mobile_center-header {
+        margin-top: 30px;
+    }
+
+    .footer-mobile_center {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 10px;
+    }
+
+    .footer-mobile_center-elem {
+        color: #e4e5ea;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .footer-mobile_contacts {
+        color: #656566;
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.6px;
+        text-transform: uppercase;
+        cursor: pointer;
+        margin-top: 30px;
+    }
+
+    .footer-mobile_number {
+        cursor: pointer;
+        margin-top: 20px;
+        color: #e4e5ea;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .footer-mobile_social {
+        cursor: pointer;
+        margin-top: 8px;
+        display: flex;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+    .footer-mobile_adress {
+        margin-top: 12px;
+        color: #e4e5ea;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .footer-mobile_politic-one {
+        margin-top: 50px;
+        color: #e4e5ea;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .footer-mobile_politic-two {
+        margin-top: 5px;
+        color: #e4e5ea;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-decoration-line: underline;
+    }
+
+    .ball-two {
+        height: 43px;
+        width: 43px;
+        top: 457px;
+        left: 29px;
+    }
+
+    .ball-three {
+        position: absolute;
+        z-index: 1;
+        width: 40px;
+        height: 40px;
+        top: 291px;
+        left: 296px;
+    }
+
+    .red-light {
+        width: 211px;
+        height: 210px;
+        top: 296px;
+        left: -55px;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .purple-light {
+        width: 259px;
+        height: 259px;
+        top: 162px;
+        left: 258px;
+        position: absolute;
+        z-index: 1;
+    }
 }
